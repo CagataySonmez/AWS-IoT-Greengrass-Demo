@@ -1,0 +1,17 @@
+{
+  "RecipeFormatVersion": "2020-01-25",
+  "ComponentName": "samplePrintMsg",
+  "ComponentVersion": "1.0.0",
+  "ComponentDescription": "My test AWS IoT Greengrass component.",
+  "ComponentPublisher": "Amazon",
+  "ComponentConfiguration": {
+    "DefaultConfiguration": {"Message": "custom test message"}
+  },
+ "Manifests": [
+    { 
+      "Platform":  { "os": "linux" }, 
+      "Lifecycle": { "run": "python3 -u {artifacts:path}/cmpe583-PrintMsg.py \"{configuration:/Message}\"" },
+      "Artifacts": [ { "URI": "s3://cmpe583.greengrass.bucket/artifacts/cmpe583-PrintMsg.py" } ]
+    }
+  ]
+} 
