@@ -1,0 +1,21 @@
+{
+  "mqttTopicMapping": {
+    "ClientDeviceHelloWorld": {
+      "topic": "clients/+/hello/world",
+      "source": "LocalMqtt",
+      "target": "IotCore"
+    },
+    "ClientDeviceEvents": {
+      "topic": "clients/+/alert",
+      "targetTopicPrefix": "event/",
+      "source": "LocalMqtt",
+      "target": "Pubsub"
+    },
+    "ClientDeviceCloudStatusUpdate": {
+      "topic": "clients/+/status",
+      "targetTopicPrefix": "update/",
+      "source": "LocalMqtt",
+      "target": "IotCore"
+    }
+  }
+}
