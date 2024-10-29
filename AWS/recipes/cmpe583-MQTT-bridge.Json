@@ -5,11 +5,11 @@
       "source": "LocalMqtt",
       "target": "IotCore"
     },
-	"ClientToClientEvents": {
-		"topic": "clients/+/sync",
-		"source": "LocalMqtt",
-		"target": "Pubsub"
-	},
+    "ClientToClientEvents": {
+      "topic": "clients/+/sync",
+      "source": "LocalMqtt",
+      "target": "Pubsub"
+    },
     "ClientDeviceEvents": {
       "topic": "clients/+/alert",
       "targetTopicPrefix": "event/",
