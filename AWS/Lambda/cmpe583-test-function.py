@@ -13,7 +13,7 @@ def lambda_handler(event, context):
     print('Sending test email...')
     
     subject = 'CMPE 583'
-    msg = 'This is a test e-mail from CMPE 583 lecture!'
+    msg = f'This is a test e-mail from CMPE 583 lecture! Your MQTT message is: {event["message"]}'
 
     message = 'Subject: {}\n\n{}'.format(subject, msg)
     ctx = ssl.create_default_context()

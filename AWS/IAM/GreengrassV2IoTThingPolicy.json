@@ -20,7 +20,7 @@
         "iot:DeleteThingShadow"
       ],
       "Resource": [
-        "arn:aws:iot:region:465822364162:thing/*"
+        "arn:aws:iot:region:account-id:thing/*"
       ]
     }
   ]

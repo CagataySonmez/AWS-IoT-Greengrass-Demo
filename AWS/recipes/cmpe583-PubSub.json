@@ -32,7 +32,7 @@
 	"Manifests": [
 		{
 			"Lifecycle": {
-				"Install": "pip3 install --user awsiotsdk --break-system-packages",
+				"Install": "pip3 install --user awsiotsdk botocore --break-system-packages",
 				"Run": "python3 -u {artifacts:path}/cmpe583-PubSub.py cmpe/request cmpe/response\n"
 			},
 			"Artifacts": [
